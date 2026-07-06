@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikSave Elite | The Professional TikTok Downloader</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="glass-bg"></div>
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+
+    <div class="app-container">
+        <header class="animate-in">
+            <div class="brand">
+                <div class="brand-logo">💎</div>
+                <h1>TikSave<span>Elite</span></h1>
+            </div>
+            <p class="tagline">TikTok Video Downloader • Simplified</p>
+        </header>
+
+        <section class="search-section animate-in">
+            <div class="search-box-v2">
+                <div class="input-focus-ring">
+                    <div class="paste-icon" id="paste-btn" title="Paste from clipboard">📋</div>
+                    <input type="text" id="tiktok-url" placeholder="Paste link here..." autocomplete="off">
+                    <button id="search-btn">
+                        <span class="btn-content">Search</span>
+                        <div class="spinner" id="main-spinner"></div>
+                    </button>
+                </div>
+                <div id="status-display" class="status-msg"></div>
+            </div>
+        </section>
+
+        <section id="result-view" class="result-view" style="display: none;">
+            <div class="savett-card">
+                <div class="video-side">
+                    <div class="player-wrapper">
+                        <video id="video-player" controls preload="metadata"></video>
+                    </div>
+                </div>
+
+                <div class="options-side">
+                    <div class="meta-data">
+                        <h3 id="v-author">@username</h3>
+                        <p id="v-desc" class="video-description">Description...</p>
+                        <div class="v-stats-row">
+                            <span class="stat-item">🎬 <span id="s-views">0</span></span>
+                            <span class="stat-item">❤️ <span id="s-likes">0</span></span>
+                        </div>
+                    </div>
+
+                    <div class="format-table">
+                        <div class="table-header">
+                            <span>Format</span>
+                            <span>Quality</span>
+                            <span>Action</span>
+                        </div>
+                        <div class="table-row">
+                            <span class="f-type">MP4</span>
+                            <span class="f-qual">No Watermark</span>
+                            <button id="dl-no-wm" class="mini-dl">Download</button>
+                        </div>
+                        <div class="table-row">
+                            <span class="f-type">MP4</span>
+                            <span class="f-qual">HD</span>
+                            <button id="dl-hd" class="mini-dl">Download</button>
+                        </div>
+                        <div class="table-row">
+                            <span class="f-type">MP3</span>
+                            <span class="f-qual">Audio Only</span>
+                            <button id="dl-audio" class="mini-dl">Download</button>
+                        </div>
+                    </div>
+
+                    <button id="reset-btn" class="secondary-action">Download Another Video</button>
+                </div>
+            </div>
+        </section>
+
+        <footer class="animate-in">
+            <div class="credits">
+                <p>Created by <strong>Dhanuka Shenal</strong></p>
+                <div class="owner-info">
+                    <span>📞 0742967661</span> |
+                    <span>👑 VIHA-MD Owner</span>
+                </div>
+                <div class="team-tags">
+                    <span>Danu Z</span> • <span>Dhanuka Shenal</span>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2026 TikSave Elite • Powered by <strong>Dhanuka Shenal</strong>. All rights
+                Reserved.</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
